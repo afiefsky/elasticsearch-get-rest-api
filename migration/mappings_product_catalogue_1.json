@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "properties": {
+      "product_id": {"type": "integer"},
+      "product_group_code": {"type": "text"},
+      "product_code": {"type": "text"},
+      "product_name": {"type": "text"},
+      "product_discount": {"type": "integer"},
+      "product_price": {"type": "integer"},
+      "product_desc": {"type": "text"},
+      "product_img": {"type": "text"},
+      "product_status": {"type": "text"},
+      "store_product_status": {"type": "text"},
+      "store_id": {"type": "integer"},
+      "category_id": {"type": "integer"},
+      "category_name": {"type": "text"},
+      "childs": {
+        "type": "nested",
+        "properties": {
+          "product_id": {"type": "integer"},
+          "category_id": {"type": "integer"},
+          "category_name": {"type": "text"},
+          "product_group_code": {"type": "text"},
+          "product_code": {"type": "text"},
+          "product_name": {"type": "text"},
+          "product_discount": {"type": "integer"},
+          "product_price": {"type": "integer"},
+          "product_desc": {"type": "text"},
+          "product_img": {"type": "text"},
+          "product_status": {"type": "text"},
+          "store_product_status": {"type": "text"},
+          "additionals": {
+            "type": "nested",
+            "properties": {
+              "product_main_id": {"type": "integer"},
+              "product_additional_id": {"type": "integer"},
+              "category_id": {"type": "integer"},
+              "category_name": {"type": "text"},
+              "product_name": {"type": "text"},
+              "product_code": {"type": "text"},
+              "product_discount": {"type": "integer"},
+              "product_price": {"type": "integer"},
+              "product_status": {"type": "text"},
+              "store_product_status": {"type": "text"},
+              "is_default": {"type": "integer"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
