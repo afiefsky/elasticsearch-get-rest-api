@@ -1,0 +1,44 @@
+{
+  "product_id": 1,
+  "product_group_code": "group_123",
+  "product_code": "code_456",
+  "product_name": "Product ABC",
+  "product_discount": 10,
+  "product_price": 1000,
+  "product_desc": "This is the description of Product ABC.",
+  "product_img": "path/to/image.jpg",
+  "product_status": "available",
+  "store_id": 123,
+  "category_id": 456,
+  "category_name": "Category XYZ",
+  "childs": [
+    {
+      "product_id": 2,
+      "category_id": 789,
+      "category_name": "Child Category",
+      "product_group_code": "group_789",
+      "product_code": "code_012",
+      "product_name": "Child Product XYZ",
+      "product_discount": 5,
+      "product_price": 500,
+      "product_desc": "This is the description of Child Product XYZ.",
+      "product_img": "path/to/child_image.jpg",
+      "product_status": "available",
+      "store_product_status": "available",
+      "additionals": [
+        {
+          "product_main_id": 2,
+          "product_additional_id": 1,
+          "category_id": 123,
+          "category_name": "Additional Category",
+          "product_name": "Additional Product",
+          "product_code": "additional_code",
+          "product_discount": 0,
+          "product_price": 200,
+          "store_product_status": "available",
+          "is_default": 1
+        }
+      ]
+    }
+  ]
+}
